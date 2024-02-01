@@ -11,8 +11,8 @@ body{
 }
 
 .container{
+    max-width: 20rem;
     background: hsl(0, 0%, 12%);
-    width: 20rem;
     padding:2.5rem;
     margin-top: 10vh;
     margin-bottom: 3rem;
@@ -54,11 +54,13 @@ body{
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
 .social-links a{
-    display: block;
+    display: inline-block;
+    width: 18rem;
     text-align: center;
     font-size: 0.875rem;
     font-weight: 600;
@@ -73,3 +75,12 @@ body{
     color: hsl(0, 0%, 8%);
 }
 
+@media(max-width:28rem){
+    .container{
+        padding-inline:1rem;
+    }
+
+    .social-links a{
+        width: 16rem;
+    }
+}
